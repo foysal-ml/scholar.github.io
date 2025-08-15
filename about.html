@@ -96,25 +96,81 @@
   </div>
 
   <main class="fade-in">
-  <section class="px-4">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-      <div class="order-last md:order-first">
-  <img src="assets/headshot.png" alt="Foysal Ahammad portrait"
-       style="width:100%;border-radius:1rem;border:1px solid color-mix(in oklab, var(--fg) 12%, transparent)">
-</div>
+    <section class="px-4">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <!-- Portrait -->
+        <div class="order-last md:order-first">
+          <img src="assets/headshot.png" alt="Foysal Ahammad portrait"
+               style="width:100%;border-radius:1rem;border:1px solid color-mix(in oklab, var(--fg) 12%, transparent)">
+        </div>
 
-      <div class="md:col-span-2">
-        <h1 class="font-serif text-2xl font-semibold tracking-tight">About</h1>
-        <p class="mt-2" style="color:var(--muted)">I focus on sequence→structure→function modeling, protein/peptide design, and translational multi‑omics. My work includes AI‑driven biomarker discovery and precision diagnostics in pediatric cerebral palsy, plus computational drug discovery across viral and cancer pathways.</p>
+        <!-- About (concise, admissions-oriented) -->
+        <div class="md:col-span-2 space-y-6">
+          <header>
+            <h1 class="font-serif text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[var(--accent)] via-[var(--accent-2)] to-cyan-400">
+              About
+            </h1>
+            <p class="mt-2 text-[color:var(--muted)] text-[1.05rem]/7">
+              I’m a computational & structural biologist focused on
+              <span class="font-medium">sequence → structure → function</span> modeling, protein/peptide design, and translational multi-omics.
+              I develop end-to-end AI pipelines that turn genome/epigenome/transcriptome data into mechanistic insight,
+              biomarkers, and actionable targets—especially for neurodevelopmental disease.
+            </p>
+            <p class="mt-3 text-[color:var(--muted)]">
+              Recent work centers on precision diagnostics in pediatric cerebral palsy, variant effect prediction,
+              and target/lead discovery across viral and oncology pathways. I also mentor and build community as
+              founder of <span class="font-medium">BioSol Centre</span> (Bangladesh).
+            </p>
+          </header>
+
+          <!-- Focus -->
+          <section class="space-y-3">
+            <h2 class="font-semibold text-sm tracking-wide uppercase opacity-90">Focus</h2>
+            <ul class="grid sm:grid-cols-2 gap-2 text-sm text-[color:var(--muted)]">
+              <li class="rounded-xl border p-3">
+                <span class="font-medium text-[color:var(--fg)]">AI biomarkers & diagnostics</span><br>
+                EWAS/DMR, DEG, and network-level prioritization with model explainability.
+              </li>
+              <li class="rounded-xl border p-3">
+                <span class="font-medium text-[color:var(--fg)]">Variant interpretation</span><br>
+                Genotype-to-phenotype modeling; functional and structural impact.
+              </li>
+              <li class="rounded-xl border p-3">
+                <span class="font-medium text-[color:var(--fg)]">Protein & peptide design</span><br>
+                Stability/affinity engineering, docking, and in-silico screening.
+              </li>
+              <li class="rounded-xl border p-3">
+                <span class="font-medium text-[color:var(--fg)]">Translational multi-omics</span><br>
+                Integrated genome–epigenome–transcriptome analyses for clinical utility.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Selected notes -->
+          <section class="space-y-3">
+            <h2 class="font-semibold text-sm tracking-wide uppercase opacity-90">Selected notes</h2>
+            <ul class="list-disc pl-5 text-sm text-[color:var(--muted)] space-y-2">
+              <li>Built Nature-style, reproducible pipelines (QC → DMP/DMR → enrichment → calibrated ML).</li>
+              <li>Training: <span class="font-medium">8th Variant Effect Prediction Training Course</span>, Palermo, Italy (Oct&nbsp;14–16, 2024; 24.25&nbsp;hours).</li>
+              <li>Community: founded <span class="font-medium">BioSol Centre</span> to enable student-led bioinformatics projects.</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Contact (same data, styled card) -->
+        <aside class="text-sm">
+          <div class="rounded-xl border p-4 bg-[color:var(--surface)]/50">
+            <div class="font-semibold mb-2">Contact</div>
+            <ul class="space-y-1 text-[color:var(--muted)]">
+              <li><strong>Email:</strong> <a class="underline" href="mailto:foysalgebt@gmail.com">foysalgebt@gmail.com</a></li>
+              <li><strong>Phone:</strong> +974 3993 1945</li>
+              <li><strong>Location:</strong> Doha, Qatar</li>
+            </ul>
+          </div>
+        </aside>
       </div>
-      <ul class="text-sm" style="color:var(--muted)">
-        <li><strong>Email:</strong> <a class="underline" href="mailto:foysalgebt@gmail.com">foysalgebt@gmail.com</a></li>
-        <li><strong>Phone:</strong> +974 3993 1945</li>
-        <li><strong>Location:</strong> Doha, Qatar</li>
-      </ul>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
   
   <footer class="mt-16 border-t">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-[color:var(--muted)] flex flex-col md:flex-row items-center justify-between gap-4">
