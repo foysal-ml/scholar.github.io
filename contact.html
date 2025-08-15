@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Foysal Ahammad</title>
+  <link rel="canonical" href="https://foysal-ml.github.io/scholar.github.io/contact.html">
+  <meta name="description" content="Prospective PhD student portfolio — computational & structural biology, multi-omics, protein/drug design, and AI for precision medicine." />
+  <meta property="og:title" content="Contact • Foysal Ahammad" />
+  <meta property="og:description" content="Computational & structural biology • Multi-omics • Protein/drug design • AI for precision medicine" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://foysal-ml.github.io/scholar.github.io/og-image.jpg" />
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Crimson+Pro:wght@600;700&display=swap" rel="stylesheet">
+  <script>window.tailwind={config:{darkMode:'class'}};</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/script.js"></script>
+</head>
+<body class="font-sans" style="background:var(--bg); color:var(--fg)">
+  
+  <div class="sticky top-0 z-50 border-b bg-[var(--bg)]/85 backdrop-blur supports-[backdrop-filter]:bg-[var(--bg)]/60">
+    <div class="max-w-6xl mx-auto h-14 px-4 flex items-center justify-between">
+      <a href="index.html" class="font-serif text-lg font-semibold tracking-tight">Foysal Ahammad</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="about.html" class="navlink">About</a>
+        <a href="stanford-fit.html" class="navlink">Stanford Fit</a>
+        <a href="research.html" class="navlink">Research</a>
+        <a href="publications.html" class="navlink">Publications</a>
+        <a href="teaching.html" class="navlink">Teaching</a>
+        <a href="awards.html" class="navlink">Awards</a>
+        <a href="news.html" class="navlink">News</a>
+        <a href="contact.html" class="navlink">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="openCmd" class="btn-subtle">Search ⌘/Ctrl+K</button>
+        <a href="assets/Foysal-CV.pdf" class="btn-subtle">Download CV</a>
+        <button id="openSettings" class="btn-subtle" aria-label="Open settings">⚙</button>
+      </div>
+    </div>
+    <div class="h-[2px] w-full bg-gradient-to-r from-[var(--accent)] via-[var(--accent-2)] to-cyan-400"></div>
+  </div>
+
+  <!-- Command Palette -->
+  <div id="commandPalette" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/40" data-cmd-close></div>
+    <div class="absolute inset-0 grid place-items-center p-4">
+      <div class="w-full max-w-xl rounded-xl bg-[var(--surface)] border shadow-xl">
+        <div class="px-4 pt-3 pb-2 border-b">
+          <input id="cmdInput" type="text" placeholder="Type to search pages…" class="w-full bg-transparent outline-none py-2" />
+        </div>
+        <ul id="cmdList" class="max-h-72 overflow-auto p-1"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Panel -->
+  <div id="settingsPanel" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/40" data-settings-close></div>
+    <div class="absolute right-0 top-0 h-full w-full sm:w-[420px] bg-[var(--surface)] border-l p-5 overflow-y-auto">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-semibold">Appearance</h2>
+        <button class="btn-subtle" data-settings-close>✕</button>
+      </div>
+      <div class="space-y-6 text-sm">
+        <div>
+          <div class="font-medium mb-2">Mode</div>
+          <div class="flex gap-2">
+            <button class="btn-chip" data-mode="light">Light</button>
+            <button class="btn-chip" data-mode="dark">Dark</button>
+            <button class="btn-chip" data-mode="system">System</button>
+          </div>
+        </div>
+        <div>
+          <div class="font-medium mb-2">Background</div>
+          <div class="grid grid-cols-2 gap-2">
+            <button class="chip-bg" data-bg="white">White</button>
+            <button class="chip-bg" data-bg="warm">Warm</button>
+            <button class="chip-bg" data-bg="dim">Dim</button>
+            <button class="chip-bg" data-bg="paper">Paper</button>
+          </div>
+        </div>
+        <div>
+          <div class="font-medium mb-2">Accent</div>
+          <div class="grid grid-cols-2 gap-2">
+            <button class="chip-accent" data-accent="harvard">Harvard</button>
+            <button class="chip-accent" data-accent="mit">MIT</button>
+            <button class="chip-accent" data-accent="stanford">Stanford</button>
+            <button class="chip-accent" data-accent="cobalt">Cobalt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="fade-in">
+  <section class="px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 card">
+        <h1 class="font-serif text-xl font-semibold">Get in touch</h1>
+        <form class="grid grid-cols-1 gap-4 mt-3" action="https://formsubmit.co/foysalgebt@gmail.com" method="POST">
+          <!-- FormSubmit: sends messages to your email; you'll confirm once via email -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New message from Foysal academic website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="thanks.html">
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <input class="btn-subtle" name="name" placeholder="Full name" required>
+            <input class="btn-subtle" name="email" type="email" placeholder="Email" required>
+          </div>
+          <input class="btn-subtle" name="subject" placeholder="Subject" required>
+          <textarea class="btn-subtle" name="message" placeholder="Your message" rows="6" required></textarea>
+          <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="_cc" value="true"> Send me a copy</label>
+          <button class="btn-primary">Send</button>
+        </form>
+        <noscript>
+          <p class="mt-3 text-sm" style="color:var(--muted)">JavaScript is disabled. You can also email directly: <a href="mailto:foysalgebt@gmail.com" class="underline">foysalgebt@gmail.com</a></p>
+        </noscript>
+      </div>
+      <div class="card text-sm" style="color:var(--muted)">
+        <h2 class="font-medium">Direct</h2>
+        <p class="mt-2"><b>Email:</b> <a class="underline" href="mailto:foysalgebt@gmail.com">foysalgebt@gmail.com</a></p>
+        <p><b>Phone:</b> +974 3993 1945</p>
+        <p><b>Scholar:</b> <a class="underline" href="https://scholar.google.com/">scholar.google.com</a></p>
+        <p><b>LinkedIn:</b> <a class="underline" href="https://www.linkedin.com/in/foysalgebt/">linkedin.com/in/foysalgebt</a></p>
+        <p><b>ORCID:</b> <a class="underline" href="https://orcid.org/0000-0001-7313-4729">0000-0001-7313-4729</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+  
+  <footer class="mt-16 border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-[color:var(--muted)] flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Foysal Ahammad • Last updated <span id="lastUpdated"></span></p>
+      <div class="flex items-center gap-3">
+        <a class="hover:underline" href="https://scholar.google.com/">Scholar</a>
+        <a class="hover:underline" href="https://www.linkedin.com/in/foysalgebt/">LinkedIn</a>
+        <a class="hover:underline" href="https://orcid.org/0000-0001-7313-4729">ORCID</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="btn-fab">↑</button>
+</body>
+</html>
